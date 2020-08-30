@@ -88,7 +88,7 @@ api.add_resource(DeleteTicket, "/deleteticket/<int:ticket_id>")
 class ViewUser(Resource):
     @marshal_with(resource_fields)
     def get(self, ticket_id):
-        result = TicketModel.query.filter_by(id=ticket_id)
+        result = TicketModel.query.filter_by(id=ticket_id).one()
         return result
 
 api.add_resource(ViewUser, "/viewuser/<int:ticket_id>")
