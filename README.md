@@ -4,7 +4,7 @@ The assessment project for Zomentum.
 
 ## Getting Started
 
-Given below is a step by step procedure explaining how to run this API in your localhost machine.
+Given below is a step by step procedure explaining how to run this API in your localhost machine. Screenshots of all the API endpoints using Postman is inside the 'images' folder.
 
 ### Prerequisites
 
@@ -41,6 +41,6 @@ python unit_tests.py
 * SQLAlchemy - An open-source SQL toolkit and object-relational mapper for the Python
 * Scheduler - A Job Scheduler for Python
 
-## Key Points
+## Note
 
-* This 
+* This database makes use of Integers to represent Times. For eg: 830 -> 8:30am, 1525 -> 15:25pm. This was primarily done due to the time constraint of the tast due to which I refrained from dealing with any data processing I might had to do.
